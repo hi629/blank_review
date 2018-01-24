@@ -9,6 +9,7 @@
 
 <ion-content padding>
   <button (click)="toHome()" ion-button>ホームボタン</button>
+  <button [navPush]="searchPage" ion-button>サーチボタン</button>
   <form padding (submit)="addTask()" #f="ngForm">
     <ion-list>
       <ion-item>

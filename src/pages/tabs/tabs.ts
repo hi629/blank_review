@@ -11,6 +11,6 @@ import { AboutPage } from '../about/about';
 export class TabsPage {
   aboutPage = AboutPage;
   contactPage= ContactPage;
-  searchPage = AboutPage;
+  searchPage = SearchPage;
 
 }
