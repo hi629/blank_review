@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>aboutttt</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button (click)="toHome()" ion-button>ホームボタン</button>
+  <form padding (submit)="addTask()" #f="ngForm">
+    <ion-list>
+      <ion-item>
+        <ion-label floating>名前</ion-label>
+        <ion-input type="text" [(ngModel)]="task" name="task" required minlength="2" maxlength="20"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button type="submit" ion-button [disabled]="!f.form.valid">コンタクトリスト追加</button>
+  </form>
+</ion-content>
